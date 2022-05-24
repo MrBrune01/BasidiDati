@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS clip;
+CREATE TABLE clip (
+   id_clip INT NOT NULL,
+	id_canale VARCHAR(25) NOT NULL,
+   titolo VARCHAR(25) NOT NULL,
+	durata  TIMESTAMP NOT NULL,
+	PRIMARY KEY (id_clip),
+	FOREIGN KEY (id_canale) REFERENCES canale(nome) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
