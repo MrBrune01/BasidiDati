@@ -1,11 +1,11 @@
-DROP TABLE IF EXISTS utente;
-DROP TYPE IF EXISTS tipo_utente;
-CREATE TYPE tipo_utente AS ENUM ('streamer', 'spettatore', 'moderatore');
-CREATE TABLE utente (
+DROP TABLE IF EXISTS account;
+DROP TYPE IF EXISTS tipo_account;
+CREATE TYPE tipo_account AS ENUM ('streamer', 'spettatore', 'moderatore');
+CREATE TABLE account (
    username VARCHAR(15) NOT NULL,
    email VARCHAR(25) NOT NULL,
 	user_pass VARCHAR(12) NOT NULL,
-	user_type tipo_utente NOT NULL,
+	user_type tipo_account NOT NULL,
    PRIMARY KEY (username)
 );
 
