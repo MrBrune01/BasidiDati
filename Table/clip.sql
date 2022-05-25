@@ -10,7 +10,7 @@ CREATE TABLE clip (
 	FOREIGN KEY (id_canale) REFERENCES canale(nome) ON UPDATE CASCADE ON DELETE CASCADE,
 	FOREIGN KEY (id_account) REFERENCES account(username) ON UPDATE CASCADE ON DELETE CASCADE
 );
-
+--suka
 insert into clip (id_clip, id_canale, titolo, durata, file_loc, id_account) values
 (1, 'ipettisall1', 'Podargus strigoides',30, 'https://robohash.org/culpasaepeearum.png?size=50x50&set=set1',  'gglackini'),
 (2, 'ipettisall1', 'Petaurus norfolcensis',30, 'https://robohash.org/architectoharumnisi.png?size=50x50&set=set1',  'gglackini'),
