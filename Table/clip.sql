@@ -5,6 +5,7 @@ CREATE TABLE clip (
     titolo VARCHAR(25) NOT NULL,
 	durata  TIMESTAMP NOT NULL,
 	id_account VARCHAR(25) NOT NULL,
+	visualizzazioni INT NOT NULL,
 	PRIMARY KEY (id_clip),
 	FOREIGN KEY (id_canale) REFERENCES canale(nome) ON UPDATE CASCADE ON DELETE CASCADE
 	FOREIGN KEY (id_account) REFERENCES account(username) ON UPDATE CASCADE ON DELETE CASCADE
