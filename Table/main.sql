@@ -3,7 +3,7 @@ DROP TABLE IF EXISTS sponsorizza;
 DROP TABLE IF EXISTS affiliazione;
 DROP TABLE IF EXISTS azienda;
 DROP TABLE IF EXISTS clip;
-DROP TABLE IF EXISTS visiona;
+DROP TABLE IF EXISTS guarda;
 DROP TABLE IF EXISTS commenta;
 DROP TABLE IF EXISTS diretta;
 DROP TABLE IF EXISTS categoria;
@@ -98,7 +98,7 @@ CREATE TABLE abbonati (
 	FOREIGN KEY (id_canale) REFERENCES canale(nome) ON UPDATE CASCADE ON DELETE CASCADE
 );
 
-CREATE TABLE visiona (
+CREATE TABLE guarda (
 	id_account VARCHAR(25) NOT NULL,
 	id_diretta INT NOT NULL,
 	PRIMARY KEY (id_account,id_diretta),
@@ -4052,8 +4052,12 @@ insert into sponsorizza (p_iva, id_canale, prezzo) values
 (37929198592, 'agaskal2d', 3335),
 (39818426678, 'acicconek', 1666);
 
-insert into visiona (id_account, id_diretta) values
-('gmcgeen', 77),
+insert into guarda (id_account, id_diretta) values
+('gmcgeen', 1),
+('gmcgeen', 2),
+('gmcgeen', 3),
+('gmcgeen', 4),
+('gmcgeen', 5),
 ('kdomotor10', 90),
 ('tyaneevj4', 11),
 ('pdurno3z', 17),

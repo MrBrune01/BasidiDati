@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS visiona;
-CREATE TABLE visiona (
+DROP TABLE IF EXISTS guarda;
+CREATE TABLE guarda (
 	id_account VARCHAR(25) NOT NULL,
 	id_diretta INT NOT NULL,
 	PRIMARY KEY (id_account,id_diretta),
@@ -7,7 +7,7 @@ CREATE TABLE visiona (
 	FOREIGN KEY (id_diretta) REFERENCES diretta(id_diretta) ON UPDATE CASCADE ON DELETE CASCADE
 );
 
-insert into visiona (id_account, id_diretta) values
+insert into guarda (id_account, id_diretta) values
 ('gmcgeen', 77),
 ('kdomotor10', 90),
 ('tyaneevj4', 11),
