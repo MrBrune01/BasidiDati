@@ -1177,7 +1177,6 @@ INSERT INTO account (username, email, user_pass, user_type) VALUES
 ('lmaffinrp', 'zhattrp@163.com', 'a853ee69145893f40c355d876ec355ab602a748a1c5d9a58ff14b944132c45bb', 'spettatore'),
 ('ajohnrq', 'rmathewrq@livejournal.com', '3cac225d76fbff6c99ba9c55d31785cb589112fe3840961430e376801a67b1b4', 'spettatore'),
 ('dgravattrr', 'shobbenrr@cornell.edu', '0a0bff22767be5eaa638404235d2d313e1f1be3a9fbf4718f61e545da3897b90', 'spettatore'),
-------------------------------------------------------------------------------------------------------------------
 ('rledwidge0', 'lheggadon0@imageshack.us', 'bb2c6305f1e6a13dbc290cedd1fd07962b10368971b5c78e2cf5a6ed7116614a', 'streamer'),
 ('ocowdrey1', 'pgarrood1@123-reg.co.uk', '9693a471bd88f6ea9075412842ba985c9fec0e750e4e61499642c83dfd0349a7', 'streamer'),
 ('dkauffman2', 'nbaudone2@youku.com', '2e63569f4337f1e9f426c5e7bca6d6180dd97dfcaeab0dbdeed07d5bb7840700', 'streamer'),
